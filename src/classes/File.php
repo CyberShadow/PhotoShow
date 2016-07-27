@@ -174,8 +174,10 @@ class File
 			$dir		=	Settings::$photos_dir;
 		}
 		
-		$rf	=	realpath($file);
-		$rd =	realpath($dir);
+		// $rf	=	realpath($file);
+		$rf = $file;
+		$rd = $dir;
+		// $rd =	realpath($dir);
 		
 		if($rf==$rd) return "";
 
