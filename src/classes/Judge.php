@@ -291,8 +291,10 @@ class Judge
 	 */
 	public static function inGoodPlace($f){
 
-		$rf =	realpath($f);
-		$rd =	realpath(Settings::$photos_dir);
+		//$rf =	realpath($f);
+		//$rd =	realpath(Settings::$photos_dir);
+		$rf = $f;
+		$rd = Settings::$photos_dir;
 		
 		if($rf == $rd) return true;
 
